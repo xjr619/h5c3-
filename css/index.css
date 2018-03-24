@@ -1,0 +1,692 @@
+/*
+ * @Author: 万少爷宝宝 
+ * @Date: 2017-12-01 16:54:41 
+ * @Last Modified by:   万少爷宝宝 
+ * @Last Modified time: 2017-12-01 16:54:41 
+ */
+/*
+
+ * @Author: 万少爷宝宝 
+ * @Date: 2017-11-29 16:54:13 
+ * @Last Modified by: 万少爷宝宝
+ * @Last Modified time: 2017-12-01 16:17:50
+ */
+html{
+    overflow: hidden;
+    /* overflow: scroll */
+}
+* {
+    box-sizing: border-box;
+}
+
+/* 最小宽和高 */
+.section{
+    min-width: 1300px;
+    min-height: 500px;
+}
+/* 购物中心 */
+
+.shop_center {
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    z-index: 10;
+}
+
+@keyframes ani_next {
+    0% {}
+    100% {
+        bottom: 1%;
+    }
+}
+
+
+/* 下一页 */
+
+.next {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    z-index: 10;
+    /* 动画名 */
+    animation-name: ani_next;
+    /* 持续的时间 */
+    animation-duration: 5s;
+    /* 循环次数 */
+    animation-iteration-count: infinite;
+    /* 方向 */
+    animation-direction: alternate;
+    /* 速度曲线 */
+    animation-timing-function: linear;
+}
+
+
+/* 导航按钮的颜色 */
+
+#fp-nav ul li a span {
+    background-color: red;
+}
+
+.section_content {
+    width: 1200px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    /* margin-left: -500px; */
+    transform: translateX(-50%);
+    border: 1px solid #000;
+}
+
+
+/* 11111111111 */
+
+.s1 {
+    background-image: url("../images/t1fpyqfltdxxaiulhh-990-600.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-color: #f9dd67;
+}
+
+
+/* 4张小物品图片 */
+
+.s1_products {
+    position: absolute;
+    bottom: 150px;
+    left: 200px;
+    /* left: 10%; */
+}
+
+
+/* 沙发 */
+
+.s1_sf {
+    position: absolute;
+    bottom: 376px;
+    /* bottom: 300px; */
+    left: 402px;
+    /* 动画函数的调用 */
+    /* animation-name: ani_s1_sf; */
+    /* 动画的持续的时间 */
+    /* animation-duration: .5s; */
+    /* 循环次数 无限循环 */
+    /* animation-iteration-count: infinite; */
+    /* 速度曲线 linear  匀速*/
+    /* animation-timing-function: linear; */
+    /* 方向 先正再反 */
+    /* animation-direction: alternate; */
+    /* 复合写法 */
+    animation: ani_s1_sf 2s infinite linear alternate;
+}
+
+
+/* 飞船 */
+
+.s1_air_ship {
+    position: absolute;
+    top: 100px;
+    /* top:200px */
+    right: 0;
+    /* 动画名称 */
+    animation-name: ani_s1_air_ship;
+    /* 持续的时间 */
+    animation-duration: 2s;
+    /* 循环次数 */
+    animation-iteration-count: infinite;
+    /* 速度曲线 */
+    animation-timing-function: linear;
+    /* 反向 */
+    animation-direction: alternate;
+}
+
+
+/* 
+动画 
+ */
+
+@keyframes ani_s1_sf {
+    0% {}
+    100% {
+        bottom: 300px;
+    }
+}
+
+@keyframes ani_s1_air_ship {
+    0% {}
+    100% {
+        top: 200px;
+    }
+}
+
+
+/* 11111111111 */
+
+
+/* 22222222222222 */
+
+.s2 {
+    background: url("../images/t1zdgpfi8exxca6rfn-2000-600.png") no-repeat center bottom #84a2d4;
+}
+
+
+/* 空的搜索框 */
+
+.s2_empty_search {
+    position: absolute;
+    bottom: 280px;
+    left: 1200px;
+    transform: translateX(-50%);
+    display: none;
+    /* 动画之后的位置 */
+    /* left: 50%;
+    transform: translateX(-50%); */
+}
+
+
+/* 沙发文字 */
+
+.s2_sf_font {
+    position: absolute;
+    bottom: 289px;
+    left: 590px;
+    display: none;
+}
+
+
+/* 有文字的搜索框 */
+
+.s2_full_search {
+    position: absolute;
+    bottom: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    /* 动画之后的状态 */
+    /* width: 150px;
+    bottom: 448px;
+    left: 800px; */
+}
+
+
+/* 多沙发 */
+
+.s2_sfs {
+    position: absolute;
+    bottom: 200px;
+    left: 800px;
+    transform: translateX(-50%);
+    width: 100px;
+    display: none;
+    /* 后状态 */
+    /* left:50%;
+    width: 441px; */
+}
+
+.s2_title1,
+.s2_title2 {
+    position: absolute;
+    bottom: 560px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s2_title2 {
+    display: none;
+}
+
+
+/* 白色的遮罩层 */
+
+.s2_wrap {
+    position: absolute;
+    width: 105px;
+    height: 105px;
+    background-color: #fff;
+    bottom: 312px;
+    left: 492px;
+    display: none;
+}
+
+
+/* 22222222222222 */
+
+
+/* 3333333333333333 */
+
+.s3 {
+    background: url("../images/main.png") no-repeat center bottom #ef674d;
+}
+
+
+/* 沙发 */
+
+.s3_sf {
+    position: absolute;
+    display: none;
+    /* 后状态 */
+    /* bottom: 260px;
+    left: 360px;
+    width: 207px; */
+}
+
+
+/* 尺寸 */
+
+.s3_size1,
+.s3_size2 {
+    position: absolute;
+    bottom: 176px;
+    left: 643px;
+}
+
+.s3_size2 {
+    display: none;
+}
+
+
+/* 购物车 */
+
+.s3_cart1,
+.s3_cart2 {
+    position: absolute;
+    bottom: 50px;
+    left: 666px;
+}
+
+.s3_cart2 {
+    display: none;
+}
+
+
+/* 3333333333333333 */
+
+
+/* 444444444444 */
+
+.s4 {
+    background: url("../images/t1iresfnxaxxca6rfn-2000-600.png") no-repeat center bottom #ffeedd;
+}
+
+
+/* 购物车容器 */
+
+.s4_cart_sf {
+    border: 1px solid #000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+
+
+/* 沙发 */
+
+.s4_sf {
+    position: absolute;
+    display: none;
+    /* 结束状态的位置 */
+    /* bottom: 202px;
+    left: 127px; */
+    z-index: -1;
+}
+
+
+/* 文字提示 */
+
+.s4_title1,
+.s4_title2 {
+    position: absolute;
+    bottom: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s4_title2 {
+    display: none;
+}
+
+
+/* 电脑 */
+
+.s4_computer {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+
+/* 地址 */
+
+.s4_addr {
+    position: absolute;
+    bottom: 315px;
+    left: 500px;
+    display: none;
+}
+.s4_cloud1{
+      position: absolute;
+    bottom: 600px;
+    left: 50%;
+}
+.s4_cloud {
+    /* 
+    可能是 fullage.js 出现bug 
+     */
+    /* position: absolute;
+    bottom: 600px;
+    left: 50%; */
+    animation: ani_s4_cloud 5s infinite linear alternate;
+    transform: translate(0, 100px);
+}
+
+@keyframes ani_s4_cloud {
+    /* 0%{} */
+    from {}
+    /* 100%  */
+    to {
+        transform: translate(600px, 100px);
+    }
+}
+
+
+/* 444444444444 */
+
+
+/* 5555555555555555 */
+
+.s5 {
+    background: url("../images/t1yisqfa4exxa3gmkg-2000-1500.png");
+    overflow: hidden;
+}
+
+
+/* 银行卡 */
+
+.s5_cards {
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+}
+
+
+/* 鼠标 */
+
+.s5_mouse1,
+.s5_mouse2 {
+    position: absolute;
+    bottom: 230px;
+    right: 100px;
+}
+
+.s5_mouse2 {
+    display: none;
+}
+
+
+/* 手 */
+
+.s5_hand {
+    position: absolute;
+    bottom: -375px;
+    right: 160px;
+    /* 结束之后的位置 */
+    /* bottom:0px; */
+}
+
+
+/* 沙发 */
+
+.s5_sf {
+    position: absolute;
+    left: 70px;
+    bottom: 100%;
+    /* 结束之后的位置 */
+    /* bottom: 120px; */
+}
+
+
+/* 账单 */
+
+.s5_order {
+    position: absolute;
+    bottom: 250px;
+    left: 100px;
+    /* 后 */
+    /* bottom: 450px; */
+}
+
+
+/* 文字提示 */
+
+.s5_title {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.s5_title_trm {
+    /* transform:rotateX(30deg) rotateY(360deg) scale(1.5);  */
+}
+
+
+/* 5555555555555555 */
+
+
+/* 66666666666666666 */
+
+.s6 {
+    background: url("../images/t1dvj.fn0gxxb0_fua-2500-600.png") no-repeat 25% 100% #85d9ed;
+    overflow: hidden;
+}
+
+
+/* 沙发 */
+
+.s6_sf {
+    position: absolute;
+    left: 440px;
+    width: 204px;
+    bottom: 100%;
+    /* 后 */
+    /* width: 50px;
+    bottom: 515px; */
+}
+
+
+/* 盒子 */
+
+.s6_box {
+    position: absolute;
+    left: 0;
+    bottom: 500px;
+    /* 后 */
+    /* left: 400px; */
+}
+
+
+/* 汽车 */
+
+.s6_car {
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+}
+
+
+/* 地址牌 */
+
+.s6_address {
+    position: absolute;
+    bottom: 111px;
+    left: 600px;
+    display: none;
+}
+
+
+/* 文字提示 */
+
+.s6_title {
+    position: absolute;
+    left: 0;
+    bottom: 500px;
+    display: none;
+    /* 后 */
+    /* left: 500px; */
+}
+
+
+/* 男孩 */
+
+.s6_boys {
+    position: absolute;
+    bottom: 0;
+    left: 557px;
+    width: 50px;
+    /* 2 */
+    /* width: 252px;
+    bottom: 114px;
+    left: 400px; */
+    /* 3 */
+    /* left: 700px; */
+}
+
+
+/* 门 */
+
+.s6_door {
+    position: absolute;
+    bottom: 116px;
+    right: 284px;
+    display: none;
+}
+
+
+/* 女孩 */
+
+.s6_girl {
+    position: absolute;
+    bottom: 114px;
+    width: 20px;
+    right: 300px;
+    display: none;
+    /* 后 */
+    /* width: 87px;
+    right: 500px; */
+}
+
+
+/* 请收货 */
+
+.s6_receive {
+    position: absolute;
+    bottom: 450px;
+    left: 900px;
+    display: none;
+}
+
+
+/* 云彩 */
+
+.s6_cloud {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
+/* 66666666666666666 */
+
+
+/* 777777777777777777 */
+
+.s7 {
+    background: url("../images/t1wf1tfctaxxa3gmkg-2000-1500.png") no-repeat center bottom;
+}
+
+.s7_star1 {
+    position: absolute;
+    bottom: 433px;
+    left: 301px;
+    width: 0;
+    height: 25px;
+    background-image: url("../images/star.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    /* 后 */
+    /* width: 100px; */
+}
+
+
+/* 好评 */
+
+.s7_good {
+    position: absolute;
+    bottom: 380px;
+    left: 310px;
+    display: none;
+}
+
+
+/* 777777777777777777 */
+
+
+/* 888888888888888888 */
+
+.s8 {
+    background: url("../images/ksgw.png");
+}
+
+
+/* 图片容器 */
+
+.s8_big_btn {
+    position: absolute;
+    width: 389px;
+    height: 160px;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.s8_big_btn>img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.s8_btn2 {
+    display: none;
+}
+
+.s8_big_btn:hover>.s8_btn1 {
+    display: none;
+}
+
+.s8_big_btn:hover>.s8_btn2 {
+    display: block;
+}
+
+
+/* 再来一次 */
+
+.s8_again {
+    position: absolute;
+    left: 50%;
+    transform: translateX(250px);
+    top: 280px;
+}
+
+
+/* 手 */
+
+.s8_hand {
+    position: absolute;
+    left: 500px;
+    bottom: 0;
+}
+
+
+/* 888888888888888888 */
